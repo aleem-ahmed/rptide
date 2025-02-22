@@ -1,0 +1,111 @@
+/* ----------------------- Search Page ----------------------- */
+/* Company Name and note Button Container */
+.search-company-name-container {
+	min-height: 33px;
+	margin-bottom: 0px;
+}
+
+/* Title Last and Change Container */
+.search-title-last-change-container {
+	display: inline;
+	margin: 0px;
+}
+
+/* Note Form Container */
+.search-note-button-container {
+	display: block;
+	float: right;
+	margin: 5px 0px;
+}
+
+/* Decision Maker Button */
+.search-note-button {
+	padding: 0 10px;
+	background-color: #70bd67;
+}
+.search-note-button:hover {
+	background-color: #9bdc94;
+}
+.search-note-button:active {
+	background-color: green;
+}
+
+/* TitleLastAndChange */
+.search-title-last-and-change {
+	display: inline;
+	font-size: 25px;
+	text-align: right;
+}
+
+/* Stock Specifications Table */
+.search-stock-data-table {
+	width: 100%;
+	margin: 2px 0px;
+	background-color: #f2f2f2;
+}
+
+/* Stock Data Table <td> */
+table.search-stock-data-table tr > td {
+	width: 12.5%;
+	border: solid;
+	border-width: 1px;
+	border-color: #ffffff;
+	font-size: 14px;
+}
+
+@media (max-width: 500px) {
+	/* table data */
+	table.search-stock-data-table tr > td {
+		min-width: 100px;
+	}
+}
+
+/* Stock Data Content News Container */
+.search-news-container {
+	padding: 0px;
+}
+
+/* Div Article Holder */
+.search-news-item {
+	overflow: hidden;
+	width: 100%;
+	margin: 2px 0px;
+	border: solid;
+	border-color: #9bdc94;
+	border-width: 2px 0px 0px 0px;
+	font-size: 14px;
+}
+.search-news-item:hover {
+	background-color: #f2f2f2;
+	cursor: pointer;
+}
+
+/* url style */
+.search-news-item p {
+	color: black;
+}
+
+/* Article Image */
+.articleImg {
+	width: 50px;
+	height: 50px;
+}
+
+/* trading View Widget (modification) */
+.trading-view-widget {
+	height: 500px;
+}
+
+@media (max-width: 768px) {
+	/* Chart Software Size Setting*/
+	.trading-view-widget {
+		height: 275px;
+	}
+}
+
+/* Container  (BootStrap edit) */
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1240px;
+	} 
+}

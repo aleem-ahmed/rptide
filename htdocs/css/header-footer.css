@@ -1,0 +1,214 @@
+/* ========================== 3. HEADER/FOOTER [Title Bar, Mobile, Search, Desktop] ========================== */
+/* --- Header --- */
+/* Header container */
+.header-container {
+	display: flex;
+	margin: 0 auto;
+	max-width: 1800px;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+}
+
+/* Logo Image */
+.logo-container {
+	margin-right: 20px;
+}
+
+/* navBar: Search Text Input */
+.search-container {
+	display: block;
+	margin-right: 10px;
+}
+
+/* Search Textbox */
+.search-container input[type=text] {
+	width: 250px;
+	height: 40px;
+	margin-top: 4px;
+	padding: 6px;
+	color: #9bdc94;
+	background: #8e8e8e;
+	border-radius: 3px 0 0 3px;
+	border-style: solid;
+	border-width: 1px 0 1px 1px;
+	font-size: 16px;
+}
+
+/* Search-Button */
+.search-container button {
+	float: right;
+	height: 40px;
+	padding:0px 10px; /*top/bottom/left/right*/
+	margin-top: 4px;
+	color: #9bdc94;
+	background: #8e8e8e;
+	border: none;
+	border-radius: 0 3px 3px 0;
+	border-style: solid;
+	border-width: 1px 1px 1px 0px;
+	font-size: 24px;
+	cursor: pointer;
+}
+.search-container button:hover {
+	color: #8e8e8e;
+	background: #9bdc94;
+}
+
+/* Placeholder Color Firefox, Internet Explorer 10-11, Microsoft Edge */
+::placeholder { color: #585659; opacity: 1; }
+:-ms-input-placeholder { color: #585659; }
+::-ms-input-placeholder { color: #585659; }
+
+/* Desktop Menu ontainer */
+.desktop-menu-container {
+	margin: 0 0 0 auto;
+}
+
+.desktop-menu-list {
+	display: inline-flex;
+	margin-bottom: 0px;
+	list-style: none;
+}
+
+/* List item links */
+.desktop-menu-container .desktop-menu-list li a {
+	padding: 10px 15px;
+	color: #9bdc94;
+	border-radius: 3px;
+	text-decoration: none;
+}
+.desktop-menu-container .desktop-menu-list li a:hover {
+	color: #9bdc94;
+	background: grey;
+}
+
+/* Mobile Menu ontainer */
+.mobile-menu-container {
+	display: none;
+}
+
+/* Mobile Button */
+.mobile-menu-button {
+	margin-left:0px;
+	padding: 3px 15px;
+	color: #9bdc93;
+	background-color: #8e8e8e;
+	border-style: none;
+	border-radius: 3px;
+	font-size: 1.1em;
+}
+.mobile-menu-button:hover,
+.mobile-menu-button:focus {
+	color: #8e8e8e;
+	background-color: #9bdc93;
+}
+
+/* Side Nav Bar that Shows Up */
+.side-nav {
+	position: fixed;
+	height: 100%;
+	width: 0;
+	top: 0;
+	right: 0;
+	background-color: #585659;
+	overflow-x: hidden;
+	transition: 0.5s;
+	box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+	
+/* Links in the Nav Menu */
+.side-nav a {
+	display: block;
+	padding: 15px;
+	color: #9bdc93;
+	transition: 0.3s;
+	font-size: 2em;
+	text-align: center;
+	text-decoration: none;
+}
+.side-nav a:hover {
+	background-color: #9bdc93;
+	color: #8e8e8e;
+}
+
+/* Close Buttom on the Nav Menu */
+.side-nav .close-btn {
+	width: 100%;
+	top: 0;
+	background: grey;
+	text-align: center;
+}
+
+@media (max-width: 540px) {
+	/* Logo Image */
+	.logo-container { 
+		display: none;
+	}
+
+	/* Search Textbox */
+	.search-container input[type=text] {
+		width: 100%;
+	}
+}
+
+@media (max-width: 970px) {
+	/* Desktop Menu Container */
+	.desktop-menu-container {
+		display: none;
+	}
+
+	/* Mobile Menu Container */
+	.mobile-menu-container {
+		display: block;
+		margin: 0 0 0 auto;
+	}
+}
+
+/* --- Footer --- */
+/* Footer Content */
+.footer-content {
+	margin: 0 auto;
+	max-width: 1800px;
+}
+
+/* Menu Container */
+.footer-menu-container {
+	margin-top: 5px;
+	width: 100%;
+}
+
+/* Footer Menu Container: List */
+.footer-menu-container ul {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/* Footer Menu Container: List Arrangment */
+.footer-menu-container li {
+	float: left;
+}
+
+/* Footer Menu Container: List Button */
+.footer-menu-container li a {
+	display: block;
+	padding: 12px 20px; /*top/bottom left/right*/
+	color: #9bdc94;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+}
+.footer-menu-container li a:hover {
+	color: #9bdc94;
+	background-color: #8e8e8e;
+	text-decoration: none !important
+}
+
+/* Footer textd Container */
+.footer-text-container {
+	float: left;
+	margin: 10px 0px 0px 0px;
+}

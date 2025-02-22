@@ -1,0 +1,61 @@
+	/* Stocks Container Settings */
+	.stocks-container {
+		margin-bottom: 1.5em; /* space between table and <p> */
+	}
+
+	/* Table within <element class="stocks-container> Settings */
+	.stocks-container table {
+		width: 100%;
+		font-size: 1.1em;
+	}
+
+	/* Stocks symbol Settings */
+	.stock-symbol {
+		width: 12%;
+		padding: 2px 4px 2px 0px;
+	}
+
+	/* classes: stock price, stock change, stock change pct, stock mkt cap, Settings */
+	.stock-price,
+	.stock-change,
+	.stock-change-pct,
+	.stock-mkt-cap {
+		width: 22%;
+		text-align: right;
+		padding: 2px 4px;
+	}
+
+	/* MultiDisplay Settings */
+	@media (max-width: 576px) {
+		/* Space after the Table */
+		.stocks-container table { 
+			margin-bottom: 3em; 
+			font-size: .9em;
+		}
+		
+		/* Market Cap Section */
+		.stock-mkt-cap { display: none; }
+		
+		/* Symbol Section */
+		.stock-symbol { width: 16%; }
+
+		/* Price, Change, Change Pct */
+		.stock-price,
+		.stock-change,
+		.stock-change-pct { 
+			width: 28%; /* (28*3) + 16 = 100 */
+		} 
+
+		/* Table Data: Symbol Price, Change, Change Pct*/
+		td.stock-symbol,
+		td.stock-price,
+		td.stock-change,
+		td.stock-change-pct {
+			padding-top: 1em;
+			padding-bottom: 1em;
+		}
+	}
+
+	/* Summary Hover Settings */
+	summary:hover { cursor: pointer; }
+	summary::-webkit-details-marker { display: none; }

@@ -1,0 +1,245 @@
+/* Dark Mode Basic Elements */
+body {
+	background-color: #8e8e8e;
+}
+
+.f-island {
+	background: #585659;
+}
+
+/* ----------------------- Home Page ----------------------- */
+/* Container for the Cards */
+.home-flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Mobile Menu */
+@media (max-width: 765px) {
+	/* All containers in front page */
+	.home-flex-container > div {
+		width: 98%;
+		
+	}
+}
+
+/* Front Page Main Content */
+.home-main-content {
+	width: 73%;
+	min-height: 100px;
+	margin: 10px 1%;
+}
+
+/* Table that holds index charts */
+.home-index-container {
+	width: 100%;
+}
+
+/* Island that holds the tables */
+.home-index-chart-container {
+	height: 250px;
+	min-height: 120px;
+	background: #585659;
+	margin: 0px 10px;
+	padding: 10px;
+}
+
+/* Chart Image Container (old index photo)  */
+.home-chart-img-container {
+	height: 100%;
+}
+
+@media (max-width: 500px) {
+	/* Index Chart Containers */
+	.home-chart-img-container {
+		display: none;
+	}
+}
+
+/* Chart Image (old index photo) */
+.chartImg {
+	width: 100%;
+}
+
+/* News Container */
+.home-news-container {
+	margin: 15px 0px;
+	padding: 15px;
+	background-color: #585659;
+}
+
+/* Div Article Holder */
+.home-div-border {
+	width: 100%;
+	border: solid;
+	border-color: #9bdc94;
+	border-width: 4px 0px 0px 0px;
+	min-height: 120px;
+	overflow: hidden;
+}
+.home-div-border:hover {
+	cursor: pointer;
+	background-color: #8e8e8e;
+}
+
+/* News Text */
+.home-div-border a {
+	text-decoration: none;
+}
+
+.home-news-item {
+	display: block;
+}
+
+/* Paragraph and title in class "innerTable" */
+.home-news-item p,
+h3 {
+	vertical-align: top;
+	font-size: 1em;
+}
+
+/* H3 in class "innerTable" */
+.home-news-item h3 {
+	font-weight: bold;
+	color:#9bdc94;
+}
+
+/* Summary */
+.home-news-item p {
+	color: black;
+}
+
+/* Front page Side Bar */
+.home-side-bar {
+	width: 23%;
+	min-height: 100px;
+	margin: 10px 1%;
+}
+
+/* box that contains stock price, stock change, stock change %, market cap */
+.home-stock-price,
+.home-stock-change,
+.home-stock-change-pct {
+	color: black;
+	text-align: right;
+	padding: 1px 4px;
+}
+
+.home-crypto-odd {
+	background-color: #8e8e8e;
+}
+
+summary::-webkit-details-marker { display: none; }
+
+/* ----------------------- Search Page ----------------------- */
+/* Company Name and note Button Container */
+.search-company-name-container {
+	min-height: 33px;
+	margin-bottom: 0px;
+}
+
+/* Title Last and Change Container */
+.search-title-last-change-container {
+	display: inline;
+	margin: 0px;
+}
+
+/* Note Form Container */
+.search-note-button-container {
+	display: block;
+	float: right;
+	margin: 5px 0px;
+}
+
+/* Decision Maker Button */
+.search-note-button {
+	padding: 0 10px;
+	background-color: #70bd67;
+}
+.search-note-button:hover {
+	background-color: #9bdc94;
+}
+.search-note-button:active {
+	background-color: green;
+}
+
+/* TitleLastAndChange */
+.search-title-last-and-change {
+	display: inline;
+	font-size: 25px;
+	text-align: right;
+}
+
+/* Stock Specifications Table */
+.search-stock-data-table {
+	width: 100%;
+	margin: 2px 0px;
+	background-color: #8e8e8e;
+}
+
+/* Stock Data Table <td> */
+table.search-stock-data-table tr > td {
+	border: solid;
+	border-width: 1px;
+	border-color: #ffffff;
+	width: 12.5%;
+	font-size: 14px;
+}
+
+@media (max-width: 500px) {
+	/* table data */
+	table.search-stock-data-table tr > td {
+		min-width: 100px;
+	}
+}
+
+/* Stock Data Content News Container */
+.search-news-container {
+	margin-top: 20px;
+	padding: 0px;
+}
+
+/* Div Article Holder */
+.search-news-item {
+	margin: 2px 0px;
+	width: 100%;
+	font-size: 14px;
+	border: solid;
+	border-color: #9bdc94;
+	border-width: 2px 0px 0px 0px;
+	overflow: hidden;
+}
+.search-news-item:hover {
+	cursor: pointer;
+	background-color: #8e8e8e;
+}
+
+/* url style */
+.search-news-item p {
+	color: white;
+}
+
+/* Article Image */
+.articleImg {
+	height: 50px;
+	width: 50px;
+}
+
+/* trading View Widget (modification) */
+.trading-view-widget {
+	height: 500px;
+}
+
+@media (max-width: 768px) {
+	/* Chart Software Size Setting*/
+	.trading-view-widget {
+		height: 275px;
+	}
+}
+
+/* Container  (BootStrap edit) */
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1240px;
+	} 
+}
